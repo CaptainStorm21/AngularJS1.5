@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Angular Tutorial - Very basic stuff</title>
+</head>
+<style>
+.red {
+  color: red;
+  font-size: 16px;
+  border-color: coral;
+  border: 4px solid;
+  padding: 10px 10px 10px 10px;
+  width: 400px;
+}
+.green {
+  color: green;
+  font-size: 16px;
+  border-color: darkgreen;
+  border: 3px solid;
+  padding: 10px 10px 10px 10px;
+    width: 400px;
+}
+</style>
+<body>
+
+<p> $odd and $even are built in ng-repeat </p>
+
+<div ng-init="numbers = [ 4,3,5,6,8,10]">
+<ul>
+  <ol ng-repeat="numbers in numbers" ng-class="{red: $even, green:$odd}"> {{ numbers }} </li>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+</body>
+</html>

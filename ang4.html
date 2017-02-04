@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Angular Tutorial - Very basic stuff</title>
+</head>
+<style>
+.red {
+  color: red;
+  font-size: 16px;
+  border-color: coral;
+  border: 4px solid;
+}
+.green {
+  color: green;
+  font-size: 16px;
+  border-color: darkgreen;
+  border: 3px solid;
+}
+</style>
+<body>
+
+<div ng-init="number = 19">
+<input type = "text" ng-model="guess" ng-class="{red: guess !=number, green: guess == number}">
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+</body>
+</html>

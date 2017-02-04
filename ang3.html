@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Angular Tutorial - Very basic stuff</title>
+</head>
+<body>
+
+<p> Show me paragraph </p>
+<input type = "checkbox" ng-model="isChecked">
+<p ng-if="isChecked"> your secret is not safe </p>
+
+<br>
+
+<p> Hide the Box </p>
+<input type = "checkbox" ng-model="isChecked1">
+<p ng-show="isChecked1" style = "color: red;"> your secret will never be safe </p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+</body>
+</html>
